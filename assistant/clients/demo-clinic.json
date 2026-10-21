@@ -1,0 +1,24 @@
+{
+  "id": "demo-clinic",
+  "business_name": "Smile Care Dental (demo)",
+  "type": "clinic",
+  "owner_name": "Dr. Demo",
+  "timezone": "Asia/Kolkata",
+  "greeting": "Hi! Thanks for reaching out to Smile Care Dental.",
+  "hours": {"mon-sat": "10:00-19:00", "sun": "closed"},
+  "address": "Bommanahalli, Bengaluru (demo address)",
+  "services": [
+    {"name": "Teeth cleaning", "keywords": ["cleaning", "scaling", "polish"], "price": "Rs 800", "duration_min": 30},
+    {"name": "Consultation", "keywords": ["consult", "checkup", "check-up", "check up"], "price": "Rs 300", "duration_min": 20},
+    {"name": "Root canal", "keywords": ["root canal", "rct"], "price": "from Rs 4,500", "duration_min": 60}
+  ],
+  "faqs": [
+    {"keywords": ["parking"], "answer": "Yes, there is free parking in front of the clinic."},
+    {"keywords": ["insurance", "cashless"], "answer": "Please call us for insurance details. We will confirm with the owner."},
+    {"keywords": ["payment", "upi", "card"], "answer": "We accept UPI, cards and cash."}
+  ],
+  "slot_minutes": 30,
+  "default_service": "Consultation",
+  "approval_topics": ["refund", "complaint", "discount", "negotiate", "lawyer", "legal", "angry", "bad experience", "pain", "emergency", "bleeding"],
+  "owner_contact": {"whatsapp": "OWNER_WHATSAPP_NUMBER_PLACEHOLDER", "email": "OWNER_EMAIL_PLACEHOLDER"}
+}
