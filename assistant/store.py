@@ -4,7 +4,7 @@ import sqlite3, json, time
 
 class Store:
     def __init__(self, path=":memory:"):
-        self.db = sqlite3.connect(path)
+        self.db = sqlite3.connect(path, check_same_thread=False)
         self.db.row_factory = sqlite3.Row
         self.db.executescript("""
         CREATE TABLE IF NOT EXISTS messages(id INTEGER PRIMARY KEY, client TEXT, channel TEXT, sender TEXT,
